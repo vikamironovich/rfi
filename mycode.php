@@ -1,1 +1,3 @@
-﻿<?php show_source(‘index.php’); ?>
+<?php
+echo '<?php show_source(‘index.php’); ?>';
+?>
