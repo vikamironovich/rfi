@@ -1,3 +1,10 @@
-<?php
-echo '<?php echo $_SERVER("SERVER_NAME"); ?>';
-?>
+<html>
+    <body>
+        <pre>
+            <?php $myfile = fopen("index.php", "r") or die("Unable to open file!");
+            echo fread($myfile,filesize("index.php"));
+            fclose($myfile);
+            ?>
+        </pre>
+    </body>
+</html>
